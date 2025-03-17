@@ -52,22 +52,34 @@ params:
 # 顶部导航栏的快捷链接
 menu:
   main:
+    - identifier: home
+      name: 首页
+      url: /
+      weight: 10
     - identifier: categories
       name: 分类
       url: /categories/
-      weight: 10
+      weight: 20
     - identifier: tags
       name: 标签
       url: /tags/
-      weight: 20
+      weight: 30
     - identifier: archives
       name: 归档
       url: /archives/
-      weight: 30
+      weight: 40
     - identifier: search
       name: 搜索
       url: /search/
-      weight: 40
+      weight: 50
+    - identifier: links
+      name: 友链
+      url: /links/
+      weight: 60        
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 70
     # 可以添加更多导航链接。weight的值越高排序越靠后
 
 # 如果要启用搜索功能，需要添加这个
