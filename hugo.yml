@@ -1,5 +1,5 @@
 baseURL: "https://hugo.952780.xyz"
-title: "DEER的BLOG"
+title: "Hi 👋, I'm Deer"
 LanguageCode: "zh-CN"
 theme: "PaperMod"
 
@@ -24,9 +24,10 @@ params:
     iconHeight: 35
   # 首页信息配置
   homeInfoParams:
-    Title: "首页展示的标题"
+    Title: "Hi 👋, I'm Deer"
     Content: >
-      首页展示的文本
+      👦 Welcome to my homepage
+
 
   # 设置网站头像和首页头像
   profileMode:
@@ -41,11 +42,11 @@ params:
   # 社交图标 (显示在简介下方)
   socialIcons:
     - name: bilibili
-      url: ""
+      url: "https://space.bilibili.com/31517542?spm_id_from=333.1007.0.0"
     - name: github
-      url: ""
+      url: "https://github.com/deerwan"
     - name: telegram
-      url: ""
+      url: "https://t.me/deerwan"
     # 可以添加更多社交图标 https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
 
 # 顶部导航栏的快捷链接
