@@ -1,0 +1,7 @@
+
+
+
+
+
+hugo new posts/xxxxx.md
+hugo server
