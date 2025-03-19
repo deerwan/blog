@@ -2,11 +2,16 @@
 abbrlink: ''
 categories:
 - 教程
+cover: null
 date: '2025-03-08'
+draft: false
+lang: ''
+published: '2025-03-08'
+summary: BNCR-xybotv2
 tags:
 - BNCR
 title: BNCR-xybotv2
-updated: '2025-03-19T16:49:53.736+08:00'
+updated: '2025-03-19T16:52:26.493+08:00'
 ---
 ### 安装命令
 
