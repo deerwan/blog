@@ -3,10 +3,11 @@ abbrlink: ''
 categories:
 - 教程
 date: '2024-03-15 09:25:00'
+summary: 小雅emby全家桶+家庭影院服务器
 tags:
 - 教程
 title: 小雅emby全家桶+家庭影院服务器
-updated: '2025-03-19T17:09:33.387+08:00'
+updated: '2025-03-19T17:14:05.746+08:00'
 ---
 视频教程
 
@@ -65,7 +66,12 @@ sudo blkid
 ```
 
 编辑/etc/fstab文件, 在文件尾部添加需要挂载磁盘的UUID 并添加一些信息例如 ↓
-`UUID=******* /home/h1/ ext4 defaults 0 2`
+
+```
+UUID=******* /home/h1/ ext4 defaults 0 2
+```
+
+
 UUID是磁盘的信息标签, /home/h1是挂载的文件夹, txt4是磁盘格式, defaults 默认.
 第一个数字：0表示开机不检查磁盘，1表示开机检查磁盘；
 第二个数字：0表示交换分区，1代表启动分区（Linux），2表示普通分区
@@ -74,13 +80,26 @@ UUID是磁盘的信息标签, /home/h1是挂载的文件夹, txt4是磁盘格式
 
 这里用脚本吧，选择一种方式
 一键脚本（工具箱}
-`curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh`
+
+```markdown
+curl -sS -O https://kejilion.pro/kejilion.sh && chmod +x kejilion.sh && ./kejilion.sh
+```
+
+
 docker一键脚本
-`bash <(curl -sSL https://linuxmirrors.cn/docker.sh)`
+
+```markdown
+bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
+```
+
 
 安装小雅
 官网地址： https://github.com/DDS-Derek/xiaoya-alist
-`bash -c "$(curl -sLk https://ddsrem.com/xiaoya_install.sh)"`
+
+```markdown
+bash -c "$(curl -sLk https://ddsrem.com/xiaoya_install.sh)"
+```
+
 
 需要两个token和一个id
 短token：https://alist.nn.ci/zh/guide/drivers/aliyundrive.html
