@@ -3,11 +3,10 @@ abbrlink: ''
 categories:
 - 教程
 date: '2025-03-08'
-excerpt: title: BNCR-xybotv2 date: 2025-03-08  tags: &quot;Bncr&quot;  安装命令 amd docker run -dit \  -p 9000:9000 \  --restart=on-failure:3 \  --name XYBotV2 \  --log-opt max-size=5m \  -v /root/XYBotV2:/app \ x...
 tags:
 - BNCR
 title: BNCR-xybotv2
-updated: '2025-03-19T16:48:33.299+08:00'
+updated: '2025-03-19T16:49:53.736+08:00'
 ---
 ### 安装命令
 
