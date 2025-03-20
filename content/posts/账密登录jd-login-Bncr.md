@@ -3,22 +3,12 @@ abbrlink: ''
 categories:
 - Bncr
 date: '2024-10-08 22:05:54'
+summary: 账密登录jd-login-Bncr
 tags:
 - Bncr
 title: 账密登录jd-login-Bncr
 updated: '2024-10-08 22:05:54'
 ---
----
-title: 账密登录jd-login-Bncr
-
-date: 2024-10-08 22:05:54
-
-tags:  "Bncr"
----
----
-
-<!-- more -->
-
 ### 1. docker run命令（新手推荐）直接复制到ssh执行
 
 ```
