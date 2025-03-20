@@ -1,10 +1,13 @@
 ---
 abbrlink: ''
-categories: []
+categories:
+- 哪吒监控
 date: '2024-09-08 22:05:54'
-tags: []
+summary: 群晖安装Agent被控端
+tags:
+- 哪吒监控
 title: 群晖安装agent被控端
-updated: '2025-03-20T22:38:52.645+08:00'
+updated: '2025-03-20T22:57:40.335+08:00'
 ---
 先手动下载nezha-agent程序
 
