@@ -3,10 +3,11 @@ abbrlink: ''
 categories:
 - HEXO
 date: '2024-10-02 21:45:24'
+summary: 如何在HEXO中插入图片
 tags:
 - HEXO
 title: 如何在HEXO中插入图片
-updated: '2025-03-20T22:40:34.796+08:00'
+updated: '2025-03-20T22:52:26.405+08:00'
 ---
 在 Hexo 中插入图片有多种方式，具体方法取决于你使用的 Hexo 插件和图片的存储位置。以下是几种常见的方式：
 
