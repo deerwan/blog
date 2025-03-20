@@ -1,5 +1,5 @@
 baseURL: "https://hugo.952780.xyz"
-title: "Hi 👋, I'm Deer"
+title: "Deer"
 LanguageCode: "zh-CN"
 theme: "PaperMod"
 
@@ -35,7 +35,7 @@ params:
 
   # 网站头像设置 (显示在导航栏)
   label:
-    text: "DEERのBLOG"
+    text: "Deer Blog"
     icon: "favicon.ico" # 这将显示在导航栏标题旁边。需要在static文件夹放置对应的图片
     iconHeight: 35
 
