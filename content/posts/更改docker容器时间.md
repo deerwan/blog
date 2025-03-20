@@ -1,10 +1,13 @@
 ---
 abbrlink: 更改docker容器时间与宿主机一致
-categories: []
+categories:
+- Docker
 date: '2024-09-08 22:05:54'
-tags: []
+summary: 更改docker容器时间
+tags:
+- Docker
 title: 更改docker容器时间
-updated: '2025-03-20T22:28:16.841+08:00'
+updated: '2025-03-20T22:53:37.150+08:00'
 ---
 ### 问题：容器时间与北京时间相差8个小时
 
