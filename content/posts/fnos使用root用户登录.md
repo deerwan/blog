@@ -1,10 +1,13 @@
 ---
 abbrlink: ''
-categories: []
+categories:
+- FN-OS
 date: '2024-10-01 21:45:24'
-tags: []
+summary: fnos使用root用户登录
+tags:
+- FN-OS
 title: fnos使用root用户登录
-updated: '2025-03-20T22:23:58.655+08:00'
+updated: '2025-03-20T22:48:00.786+08:00'
 ---
 首先去web后台打开ssh功能
 
