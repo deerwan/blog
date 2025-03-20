@@ -1,10 +1,13 @@
 ---
 abbrlink: ''
-categories: []
-date: ''
-tags: []
+categories:
+- 玩客云
+date: '2023-03-20'
+summary: 玩客云Armbian版本区别
+tags:
+- 玩客云
 title: 玩客云Armbian版本区别
-updated: '2025-03-20T22:30:08.498+08:00'
+updated: '2025-03-20T22:56:31.540+08:00'
 ---
 **bookworm_current**和**bullseye_current**和**jammy_current**的区别
 
@@ -14,13 +17,10 @@ updated: '2025-03-20T22:30:08.498+08:00'
 Bookworm 和 Bullseye 都是 Debian 发行版，前者是 Debian 12，后者是 Debian 11，主要区别在于版本的更新程度和支持时间。
 Jammy 则是 Ubuntu 发行版，它基于 Debian，但与 Debian 相比，Ubuntu 更注重用户友好性和桌面体验。Jammy 是 Ubuntu 22.04 LTS 的代号，具有长期支持。
 
-
 1. edge和current区别
    BRANCH	     内核版本
    edge	     edge
    current	      v6.1
-
-
 
 有burn和没有区别
 burn 可是直接写入到eMMC，没有的可以u盘启动
@@ -67,13 +67,11 @@ bash <(curl -sSL https://linuxmirrors.cn/docker.sh)
 bash <(curl -sL kejilion.sh)
 ```
 
-
 更新
 
 ```
 apt update -y  && apt install -y curl
 ```
-
 
 解压缩工具
 
