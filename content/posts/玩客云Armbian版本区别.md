@@ -3,7 +3,7 @@ abbrlink: ''
 categories: []
 date: ''
 tags: []
-title: ''
+title: 玩客云Armbian版本区别
 updated: '2025-03-20T22:30:08.498+08:00'
 ---
 **bookworm_current**和**bullseye_current**和**jammy_current**的区别
