@@ -9,7 +9,7 @@ tags:
 - 教程
 - 监控
 title: UptimeRobot-网站监控
-updated: '2025-03-30T11:42:25.573+08:00'
+updated: '2025-03-30T12:06:16.571+08:00'
 ---
 # 如何部署 Site Status 网站可用性监测页面
 
@@ -21,19 +21,19 @@ updated: '2025-03-30T11:42:25.573+08:00'
 
 ### 事先准备
 
-**您需要先到 **[UptimeRobot](https://uptimerobot.com/dashboard) 添加站点监控，并在 `My Settings` 页面或者 [API 管理](https://dashboard.uptimerobot.com/integrations) 页面获取类型为 `Read-Only API Key` 的 `API Key`，或者使用用于单独监视器的 `Monitor-specific API keys`（ 不要使用 `Main API key` ）
+您需要先到 [UptimeRobot](https://uptimerobot.com/dashboard) 添加站点监控，并在 `My Settings` 页面或者 [API 管理](https://dashboard.uptimerobot.com/integrations) 页面获取类型为 `Read-Only API Key` 的 `API Key`，或者使用用于单独监视器的 `Monitor-specific API keys`（ 不要使用 `Main API key` ）
 
 ### 部署流程
 
 ### 1. Fork 官方仓库
 
-**打开 **[GitHub](https://github.com/)，进入官方仓库 ，[Fork](https://github.com/imsyy/site-status) 一份到自己的账户中；
+打开 [GitHub](https://github.com/)，进入官方仓库 ，[Fork](https://github.com/imsyy/site-status) 一份到自己的账户中；
 
 `star` 并 `fork` 本项目 😘
 
 ### 2. 注册 UptimeRobot 并获取 API
 
-**访问 UptimeRobot 官网，注册免费版账户。完成后登陆仪表盘，点击 “****New monitor**” 新建监测任务：
+访问 UptimeRobot 官网，注册免费版账户。完成后登陆仪表盘，点击 “**New monitor**” 新建监测任务：
 
 ![Snipaste_2025-03-30_10-27-48.png](https://img.106996.xyz/file/Snipaste_2025-03-30_10-27-48.png)
 
@@ -49,7 +49,7 @@ updated: '2025-03-30T11:42:25.573+08:00'
 
 **回到自己 Fork 的仓库中，修改下列代码：**
 
-**首先，为保证 build 过程的兼容性，避免出现 **`Error: Failed to publish your Function. Got error: Uncaught Error: No such module "node:async_hooks".`，需要在根目录添加 wrangler.toml 文件，内容如下所示：
+首先，为保证 build 过程的兼容性，避免出现 `Error: Failed to publish your Function. Got error: Uncaught Error: No such module "node:async_hooks".`，需要在根目录添加 wrangler.toml 文件，内容如下所示：
 
 ![Snipaste_2025-03-30_10-44-58.png](https://img.106996.xyz/file/Snipaste_2025-03-30_10-44-58.png)
 
@@ -60,7 +60,7 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"  # 根据实际构建输出目录调整
 ```
 
-**然后打开 **`/app/components/SiteFooter.vue` 文件，在约 52 行处修改 `linkData` 字段中的 `github`，`home` 和 `email` 变量为自己的地址。如下图所示，这三个变量分别对应页脚处的三个 icon，修改后用户可以通过点击 icon 跳转到对应的页面。
+然后打开 `/app/components/SiteFooter.vue` 文件，在约 52 行处修改 `linkData` 字段中的 `github`，`home` 和 `email` 变量为自己的地址。如下图所示，这三个变量分别对应页脚处的三个 icon，修改后用户可以通过点击 icon 跳转到对应的页面。
 
 ![Snipaste_2025-03-30_10-47-32.png](https://img.106996.xyz/file/Snipaste_2025-03-30_10-47-32.png)
 
@@ -95,31 +95,31 @@ const metaData = {
 <n-text depth="3" @click="jumpLink(metaData.author)"> IMSYY </n-text>
 ```
 
-**如果需要其他个性化设置，也可以在 **`/app/components/` 目录中修改对应的 Vue 组件。
+如果需要其他个性化设置，也可以在 `/app/components/` 目录中修改对应的 Vue 组件。
 
 ### 4. 在 Cloudflare Pages 部署
 
-**访问 Cloudflare Pages 官网，登陆 Cloudflare 账号。进入 Workers 和 Pages 界面，点击蓝色的 “ ****创建**” 按钮并选择建立新的 Pages。
+访问 Cloudflare Pages 官网，登陆 Cloudflare 账号。进入 Workers 和 Pages 界面，点击蓝色的 “ **创建**” 按钮并选择建立新的 Pages。
 
-**本项目默认使用 **[Cloudflare Pages](https://pages.cloudflare.com/) 来行部署
+本项目默认使用 [Cloudflare Pages](https://pages.cloudflare.com/) 来行部署
 
 ![Snipaste_2025-03-30_11-22-11.png](https://img.106996.xyz/file/Snipaste_2025-03-30_11-22-11.png)
 
-**在创建页面点击 “****通过导入现有 Git 存储库创建**”：
+在创建页面点击 “**通过导入现有 Git 存储库创建**”：
 
 ![Snipaste_2025-03-30_11-23-27.png](https://img.106996.xyz/file/Snipaste_2025-03-30_11-23-27.png)
 
-**绑定 GitHub 账号，选择刚刚 Fork 并修改好的 Site-Status 仓库，点击 “****开始设置**”，然后进入 “**设置构建和部署**” 页面。在构建设置处将框架预设选为 “ **Nuxt.js**”，在环境变量处设置刚才获取的 API Key，如下图所示：
+绑定 GitHub 账号，选择刚刚 Fork 并修改好的 Site-Status 仓库，点击 “**开始设置**”，然后进入 “**设置构建和部署**” 页面。在构建设置处将框架预设选为 “ **Nuxt.js**”，在环境变量处设置刚才获取的 API Key，如下图所示：
 
 **变量名：**`API_KEY`
 
 ![Snipaste_2025-03-30_11-28-12.png](https://img.106996.xyz/file/Snipaste_2025-03-30_11-28-12.png)
 
-**然后点击 “****保存并部署**”。当看到页面显示 “ *Success: Your site was deployed!*” 时，代表部署已完成，可以访问并查看状态指示页了。部署完成后，如果环境变量需要改变，可以点击进入详情页进行修改，然后重新生成部署。之后可以按需添加自定义域，以实现使用自己的域名访问状态监控页。另外部署完成后若对 GitHub 仓库进行修改，Cloudflare Pages 也会自动重新部署。
+然后点击 “**保存并部署**”。当看到页面显示 “ *Success: Your site was deployed!*” 时，代表部署已完成，可以访问并查看状态指示页了。部署完成后，如果环境变量需要改变，可以点击进入详情页进行修改，然后重新生成部署。之后可以按需添加自定义域，以实现使用自己的域名访问状态监控页。另外部署完成后若对 GitHub 仓库进行修改，Cloudflare Pages 也会自动重新部署。
 
 ### 如何开启站点加密（可选变量）
 
-**在环境变量中添加 **`SITE_PASSWORD` 和 `SITE_SECRE_KEY`，都必须填写，缺一不可，其中 `SITE_PASSWORD`是站点密码，`SITE_SECRE_KEY` 是加密密钥，可随意填写
+在环境变量中添加 **`SITE_PASSWORD` 和 `SITE_SECRE_KEY`，都必须填写，缺一不可，其中 `SITE_PASSWORD`是站点密码，`SITE_SECRE_KEY` 是加密密钥，可随意填写
 
 ### 常见问题
 
