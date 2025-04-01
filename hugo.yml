@@ -52,6 +52,12 @@ params:
       url: "https://github.com/deerwan"
     - name: telegram
       url: "https://t.me/deerwan"
+    - name: wechat
+      url: "wechat.jpg"
+    - name: rss
+      url: "https://blog.952780.xyz/index.xml"
+    - name: email
+      url: "mailto:739914756@qq.com"
     # 可以添加更多社交图标 https://github.com/adityatelange/hugo-PaperMod/wiki/Icons
 
 # 顶部导航栏的快捷链接
