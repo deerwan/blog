@@ -1,4 +1,4 @@
-baseURL: "https://hugo.952780.xyz"
+baseURL: "https://blog.952780.xyz"
 title: "Deer"
 LanguageCode: "zh-CN"
 theme: "PaperMod"
@@ -25,8 +25,13 @@ params:
   # 首页信息配置
   homeInfoParams:
     Title: "Hi 👋, I'm Deer"
-    Content: >
+    Content: |
       👦 Welcome to my blog
+
+      🦌 This is a personal blog built with Hugo and PaperMod theme.
+
+      📝 I share my thoughts and experiences here.
+
 
 
   # 设置网站头像和首页头像
